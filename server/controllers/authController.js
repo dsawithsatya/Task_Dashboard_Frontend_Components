@@ -18,6 +18,12 @@ exports.register = async (req, res) => {
     return res.status(201).json({ id: userId, name, email });
   } catch (err) {
     console.error(err);
+    try {
+      const fs = require('fs');
+      fs.appendFileSync(__dirname + '/../error.log', new Date().toISOString() + ' - ' + (err.stack || err.message || err) + '\n');
+    } catch (e) {
+      console.error('Failed to write error log', e);
+    }
     return res.status(500).json({ message: 'Server error' });
   }
 };
