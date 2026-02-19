@@ -1,6 +1,6 @@
--- MySQL schema for taskapp
-CREATE DATABASE IF NOT EXISTS taskapp CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE taskapp;
+-- MySQL schema for ecommerce (previously taskapp)
+CREATE DATABASE IF NOT EXISTS ecommerce CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE ecommerce;
 
 CREATE TABLE IF NOT EXISTS users (
   id INT AUTO_INCREMENT PRIMARY KEY,
