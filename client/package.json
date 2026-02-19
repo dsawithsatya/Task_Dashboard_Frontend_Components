@@ -1,6 +1,7 @@
 {
   "name": "taskapp-client",
   "version": "1.0.0",
+  "homepage": "https://dsawithsatya.github.io/Users_Dashborads",
   "private": true,
   "dependencies": {
     "axios": "^1.4.0",
